@@ -288,9 +288,11 @@ def main(search_term, pages):
     #Finally, we fill the GUI frames with the two preprocessed dataframes
     pt1 = Table(lower_frame1, dataframe=amazon)
     pt1.show()
+    pt1.redraw()
     
     pt2 = Table(lower_frame2, dataframe=ebay)
     pt2.show()
+    pt2.redraw()
 
     return ebay, amazon
 
